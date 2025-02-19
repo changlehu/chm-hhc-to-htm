@@ -11,8 +11,16 @@ hh -decompile C:\Users\Administrator\Desktop\a a.chm
 
 python convert_hhc.py
 
-按要求输入目录 C:\Users\Administrator\Desktop\a
+按要求输入目录路径 C:\Users\Administrator\Desktop\a
 
-也可以是相对目录，如果python脚本直接放到chm反编译的目录中，目录可以输入 .
+也可以是相对路径，如果python脚本直接放到chm反编译的目录中，路径可以输入 .
+
+增加了一个偷懒的简单脚本，auto_decompile_chm.py
+
+最简单的做法：把chm文件复制到当前脚本目录下，运行 auto_decompile_chm.py，会自动反编译chm，并把convert_hhc.py复制到反编译的chm目录中，再进入chm目录，运行convert_hhc.py，路径输入 .
+
+
+
+
 
 完成后打开 index.htm
